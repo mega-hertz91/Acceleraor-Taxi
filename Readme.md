@@ -16,4 +16,8 @@
  - инструмент сборки gulp 
  - применена адаптивная графика
  - применена предзагрузка шрифтов
-
+---
+Тест в google Audits:
+- Performance: 94%
+- Accessibility 82%
+- Best Practices 94%
