@@ -1,0 +1,28 @@
+.page-header {
+  position: relative;
+  width: 720px;
+  margin: 0 auto;
+  background-color: #282828;
+}
+
+.page-header::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #f24841;
+}
+/*-----Tablet version-----*/
+@media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1176px) {
+  .page-header {
+    width: 100%;
+  }
+}

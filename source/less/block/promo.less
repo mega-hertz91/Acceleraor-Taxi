@@ -1,0 +1,284 @@
+.promo {
+  position: relative;
+  background-color: white;
+  background-image: url("../img/bg-header.png");
+  background-repeat: no-repeat;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &__logo-wrap {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 35px;
+    display: block;
+    width: 428px;
+    height: 150px;
+  }
+
+  &__logo {
+    width: 428px;
+    height: 149px;
+    fill: #f24841;
+  }
+
+  &__calendar {
+    position: absolute;
+    top: 25px;
+    right: 73px;
+    width: 160px;
+    height: 166px;
+    box-shadow: inset 0 0 0 10px #282828;
+  }
+
+  &__calendar::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -82px;
+    width: 240px;
+    height: 78px;
+    background-image: url("../img/city-mobile.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__date {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #f24841;
+    width: 83px;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  &__date::before {
+    content: "";
+    position: absolute;
+    width: 117px;
+    height: 10px;
+    background-color: #282828;
+    bottom: -15px;
+    left: -45px;
+  }
+
+  &__date::after {
+    content: "";
+    position: absolute;
+    left: -43px;
+    top: 2px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/icon-calendar.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__year {
+    position: absolute;
+    padding-left: 3px;
+    right: -32px;
+    width: 42px;
+    background-color: #282828;
+    color: white;
+  }
+
+  &__hotel {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #282828;
+    text-transform: uppercase;
+    width: 130px;
+    margin: 0 auto;
+    letter-spacing: -0.7px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #f24841;
+    text-transform: uppercase;
+    letter-spacing: -0.7px;
+    width: 250px;
+    margin: 0;
+    margin-left: 160px;
+    margin-top: -35px;
+    margin-bottom: 38px;
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #282828;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    margin: 0;
+    margin-left: 83px;
+    margin-bottom: 35px;
+  }
+}
+/*-----Tablet version-----*/
+@media (min-width: 768px) {
+  .promo {
+    padding-bottom: 9px;
+
+    &__logo-wrap {
+      position: relative;
+      margin-top: 15px;
+      margin-left: 58px;
+      height: 120px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: -4px;
+      left: -7px;
+      width: 451px;
+      height: 160px;
+    }
+
+    &__calendar {
+      top: 27px;
+      width: 168px;
+      height: 172px;
+    }
+
+    &__calendar::before {
+      left: -78px;
+    }
+
+    &__date {
+      margin-top: 20px;
+      margin-right: 14px;
+      margin-bottom: 20px;
+    }
+
+    &__date::before {
+      width: 125px;
+      bottom: -16px;
+      left: -50px;
+    }
+
+    &__year {
+      right: -37px;
+    }
+
+    &__title {
+      margin-left: 184px;
+      margin-top: -3px;
+      margin-bottom: 40px;
+    }
+
+    &__content {
+      margin-left: 100px;
+      letter-spacing: -0.4px;
+    }
+  }
+}
+/*-----Desktop version-----*/
+@media (min-width: 1176px) {
+  .promo {
+    width: 100%;
+    padding: 0;
+    background-image: url("../img/bg-header@desktop.png");
+    background-repeat: no-repeat;
+
+    &__wrap {
+      position: relative;
+      width: 1176px;
+      margin: 0 auto;
+      padding-top: 45px;
+      padding-bottom: 47px;
+    }
+
+    &__logo-wrap {
+      position: relative;
+      width: 757px;
+      height: 230px;
+      overflow: hidden;
+      margin-top: 0;
+      margin-left: -7px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: -21px;
+      left: -44px;
+      width: 833px;
+      height: 308px;
+    }
+
+    &__calendar {
+      top: 50px;
+      width: 312px;
+      height: 322px;
+      right: 28px;
+    }
+
+    &__calendar::before {
+      background-image: url("../img/city-mobile@desktop.png");
+      background-repeat: no-repeat;
+      width: 462px;
+      left: -158px;
+      height: 153px;
+    }
+
+    &__date {
+      font-size: 30px;
+      line-height: 40px;
+      width: 168px;
+      margin-top: 37px;
+      margin-bottom: 26px;
+    }
+
+    &__date::before {
+      left: -91px;
+      width: 233px;
+      bottom: -21px;
+    }
+
+    &__date::after {
+      top: 9px;
+      left: -80px;
+      width: 61px;
+      height: 61px;
+    }
+
+    &__year {
+      font-size: 30px;
+      line-height: 40px;
+      padding-left: 8px;
+      width: 75px;
+      right: -56px;
+    }
+
+    &__hotel {
+      font-size: 30px;
+      line-height: 40px;
+      margin-left: 50px;
+      width: 260px;
+    }
+
+    &__title {
+      font-size: 140px;
+      line-height: 61px;
+      letter-spacing: -5px;
+      margin-top: 20px;
+      margin-left: 193px;
+      margin-bottom: 106px;
+    }
+
+    &__content {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+      margin-left: 41px;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.main-nav {
+  min-height: 56px;
+
+  &__list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 195px;
+    margin-right: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 56px;
+  }
+
+  &__link {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all, 0.3s;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: white;
+  }
+
+  &__button-toggle {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 68px;
+    width: 100px;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: right;
+    color: #a0a0a0;
+    cursor: pointer;
+    transition: all, 0.3s;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--closed .main-nav__button-toggle::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #a0a0a0;
+  left: 5px;
+  top: -2px;
+  box-shadow: 0 8px 0 0 #a0a0a0,
+    0 16px 0 0 #a0a0a0;
+  transition: all, 0.3s;
+}
+
+.main-nav--closed .main-nav__button-toggle:hover,
+.main-nav--closed .main-nav__button-toggle:focus {
+  color: white;
+}
+
+.main-nav--closed .main-nav__button-toggle:hover::before,
+.main-nav--closed .main-nav__button-toggle:focus::before {
+  background-color: white;
+  box-shadow: 0 8px 0 0 white,
+    0 16px 0 0 white;
+}
+
+.main-nav--opened .main-nav__list {
+  display: flex;
+}
+
+.main-nav--opened .main-nav__button-toggle::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #a0a0a0;
+  left: 8px;
+  top: 6px;
+  transition: all, 0.3s;
+  transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__button-toggle::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #a0a0a0;
+  left: 8px;
+  top: 6px;
+  transition: all, 0.3s;
+  transform: rotate(-45deg);
+}
+
+.main-nav--opened .main-nav__button-toggle:hover,
+.main-nav--opened .main-nav__button-toggle:focus {
+  color: white;
+}
+
+.main-nav--opened .main-nav__button-toggle:hover::before,
+.main-nav--opened .main-nav__button-toggle:focus::before {
+  background-color: white;
+}
+
+.main-nav--opened .main-nav__button-toggle:hover::after,
+.main-nav--opened .main-nav__button-toggle:focus::after {
+  background-color: white;
+}
+/*-----Tablet version-----*/
+@media (min-width: 768px) {
+  .main-nav {
+    min-height: 58px;
+
+    &__button-toggle {
+      left: 90px;
+      top: 22px;
+    }
+
+    &__items {
+      margin-top: 5px;
+    }
+  }
+
+  .main-nav--closed .main-nav__button-toggle::before {
+    left: 0;
+  }
+
+  .main-nav--opened .main-nav__button-toggle::before {
+    left: 5px;
+  }
+
+  .main-nav--opened .main-nav__button-toggle::after {
+    left: 5px;
+  }
+}
+/*-----Desktop version-----*/
+@media (min-width: 1176px) {
+  .main-nav {
+    width: 1176px;
+    margin: 0 auto;
+    min-height: 108px;
+
+    &__list {
+      justify-content: flex-start;
+      margin-left: 40px;
+    }
+
+    &__items {
+      margin-top: 47px;
+      margin-right: 68px;
+    }
+
+    &__link {
+      font-size: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    &__button-toggle {
+      display: none;
+    }
+  }
+}

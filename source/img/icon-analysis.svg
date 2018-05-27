@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.87 24.26">
+  <title>Ресурс 1</title>
+  <g id="2210bd8a-0d13-4c12-b1b2-a3e2859d1ba2" data-name="Слой 2">
+    <g id="fc25b724-95d9-46fd-86ea-f36d2146f21c" data-name="Слой 1">
+      <polyline points="5.8 0.98 5.8 17.31 24.3 17.31"
+                style="fill:none;stroke:#d14a43;stroke-linecap:round;stroke-miterlimit:10"/>
+      <path d="M24.37,17.35a12.63,12.63,0,0,1-11.13,6.41A12.74,12.74,0,0,1,.5,11C.5,7.64,2.12,2.75,5.8.5"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <line x1="8.8" y1="0.81" x2="8.8" y2="15.81"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <line x1="22.3" y1="14.31" x2="7.3" y2="14.31"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <line x1="22.3" y1="9.31" x2="7.3" y2="9.31"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <line x1="22.3" y1="4.31" x2="7.3" y2="4.31"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <line x1="12.8" y1="0.81" x2="12.8" y2="15.81"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <line x1="16.8" y1="0.81" x2="16.8" y2="15.81"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <line x1="20.8" y1="0.81" x2="20.8" y2="15.81"
+            style="fill:none;stroke:#c6c2c2;stroke-linecap:round;stroke-miterlimit:10"/>
+      <path d="M8.64,13s11.16,1.22,14-10.74" style="fill:none;stroke:#d24a43;stroke-miterlimit:10"/>
+      <polygon points="24.57 4.78 24.05 5.07 22.59 2.5 20.13 4.15 19.79 3.65 22.79 1.64 24.57 4.78"
+               style="fill:#d24a43"/>
+    </g>
+  </g>
+</svg>

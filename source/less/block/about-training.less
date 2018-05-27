@@ -1,0 +1,335 @@
+.about-training {
+  padding-top: 55px;
+  padding-bottom: 10px;
+
+  &__title {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #282828;
+    text-transform: uppercase;
+    letter-spacing: -1.2px;
+    margin: 0;
+    margin-left: 42px;
+  }
+
+  &__content {
+    color: #282828;
+    line-height: 24px;
+    margin-left: 42px;
+    margin-right: 60px;
+    margin-bottom: 24px;
+  }
+
+  &__content:last-of-type {
+    margin-bottom: 47px;
+  }
+
+  &__example {
+    display: none;
+  }
+
+  &__advantages {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 90px;
+    padding-right: 32px;
+  }
+
+  &__advantages-item {
+    position: relative;
+    width: 162px;
+    padding-top: 62px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #282828;
+    margin-bottom: 40px;
+    letter-spacing: -0.6px;
+    margin-left: 5px;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 60px;
+    height: 64px;
+    top: -12px;
+    left: -2px;
+  }
+
+  &--icon-peoples {
+    background-image: url("../img/icon-peoples.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 60px;
+    height: 64px;
+  }
+
+  &--icon-motivation {
+    background-image: url("../img/icon-motivation.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 60px;
+    height: 64px;
+  }
+
+  &--icon-business {
+    background-image: url("../img/icon-business.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 60px;
+    height: 64px;
+  }
+
+  &--icon-analysis {
+    background-image: url("../img/icon-analysis.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 60px;
+    height: 64px;
+  }
+
+  &--icon-practice {
+    background-image: url("../img/icon-practice.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 60px;
+    height: 64px;
+  }
+
+  &--icon-experience {
+    background-image: url("../img/icon-experience.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 60px;
+    height: 64px;
+  }
+}
+/*-----Tablet version-----*/
+@media (min-width: 768px) {
+  .about-training {
+    position: relative;
+    padding-bottom: 40px;
+
+    &__title {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 5px;
+      margin-left: 83px;
+    }
+
+    &__content {
+      width: 250px;
+      font-size: 8.5px;
+      line-height: 13px;
+      letter-spacing: -0.9px;
+      margin-top: 12px;
+      margin-left: 83px;
+      margin-bottom: 10px;
+    }
+
+    &__content:nth-of-type(2) {
+      margin-bottom: 27px;
+    }
+
+    &__example {
+      position: absolute;
+      display: block;
+      top: 56px;
+      right: 93px;
+      width: 247px;
+      height: 199px;
+      box-shadow: inset 0 0 0 10px #282828;
+      background-image: url("../img/bg-silver.png");
+      background-repeat: no-repeat;
+    }
+
+    &__example-img {
+      position: absolute;
+      top: -26px;
+      left: 25px;
+      z-index: 1;
+    }
+
+    &__speaker-blockquote {
+      position: absolute;
+      left: -77px;
+      bottom: 12px;
+      font-size: 7.5px;
+      line-height: 10px;
+      font-style: italic;
+      width: 100px;
+      min-height: 70px;
+      background-color: #e8e8e8;
+      padding-left: 5px;
+      padding-top: 10px;
+      padding-right: 20px;
+    }
+
+    &__speaker-name {
+      position: absolute;
+      right: -22px;
+      bottom: 56px;
+      min-height: 60px;
+      width: 90px;
+      padding-left: 12px;
+      padding-top: 31px;
+      background-color: black;
+      color: white;
+      font-size: 8.5px;
+      line-height: 12px;
+      z-index: 2;
+    }
+
+    &__speaker-prof {
+      position: relative;
+      display: block;
+      font-size: 7.5px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    &__speaker-prof::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 14px;
+      bottom: -6px;
+      height: 1px;
+      background-color: white;
+    }
+
+    &__advantages {
+      padding-left: 78px;
+      padding-right: 92px;
+    }
+
+    &__advantages-item {
+      width: auto;
+      font-size: 8.5px;
+      line-height: 12px;
+      padding-top: 54px;
+      margin-bottom: 0;
+    }
+
+    &__icon {
+      top: 6px;
+    }
+
+    &--icon-peoples,
+    &--icon-motivation,
+    &--icon-business,
+    &--icon-analysis,
+    &--icon-practice,
+    &--icon-experience {
+      width: 40px;
+      height: 42px;
+    }
+  }
+}
+/*-----Desktop version-----*/
+@media (min-width: 1176px) {
+  .about-training {
+    width: 100%;
+    padding: 0;
+
+    &__wrap {
+      position: relative;
+      width: 1176px;
+      margin: 0 auto;
+      padding-top: 142px;
+      padding-bottom: 193px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      margin-left: 26px;
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.09px;
+      width: 455px;
+      margin-left: 26px;
+      margin-right: 0;
+      margin-bottom: 23px;
+    }
+
+    &__example {
+      background-image: url("../img/bg-silver@desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 146px;
+      right: 49px;
+      width: 460px;
+      height: 370px;
+    }
+
+    &__example-img {
+      top: -49px;
+      left: 49px;
+    }
+
+    &__speaker-blockquote {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.8px;
+      left: -139px;
+      bottom: 25px;
+      width: 155px;
+      min-height: 130px;
+      padding-left: 18px;
+      padding-top: 17px;
+      padding-right: 25px;
+    }
+
+    &__speaker-name {
+      font-size: 16px;
+      line-height: 24px;
+      right: -40px;
+      bottom: 104px;
+      width: 169px;
+      min-height: 112px;
+      padding-left: 21px;
+      padding-top: 55px;
+    }
+
+    &__speaker-prof {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 21px;
+    }
+
+    &__speaker-prof::before {
+      left: 2px;
+      right: 25px;
+      bottom: -11px;
+    }
+
+    &__advantages {
+      margin-top: 130px;
+      padding-left: 22px;
+      padding-right: 45px;
+    }
+
+    &__advantages-item {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__icon {
+      width: 70px;
+      height: 74px;
+      top: -30px;
+    }
+  }
+}
