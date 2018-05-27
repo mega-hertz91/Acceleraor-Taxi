@@ -94,10 +94,10 @@ gulp.task("build", function (done){
     "clean",
     "copy",
     "style",
-    //"sprite",
-   // "cssmin",
-    //"minjs",
-    //"htmlmin",
+    "sprite",
+    "cssmin",
+    "minjs",
+    "htmlmin",
     done
   );
 });
