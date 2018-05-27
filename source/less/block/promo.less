@@ -43,6 +43,16 @@
     background-repeat: no-repeat;
   }
 
+  &__calendar::after {
+    position: absolute;
+    content: "";
+    bottom: 2px;
+    left: -123px;
+    width: 47px;
+    height: 3px;
+    background-color: #282828;
+  }
+
   &__date {
     position: relative;
     font-weight: 600;
@@ -128,6 +138,9 @@
 @media (min-width: 768px) {
   .promo {
     padding-bottom: 9px;
+    background-image: url("../img/bg-header@tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__logo-wrap {
       position: relative;
@@ -151,7 +164,16 @@
     }
 
     &__calendar::before {
-      left: -78px;
+      background-image: url("../img/city-mobile@tablet.png");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      left: -81px;
+    }
+
+    &__calendar::after {
+      bottom: 0;
+      left: -130px;
+      width: 65px;
     }
 
     &__date {
@@ -190,6 +212,7 @@
     padding: 0;
     background-image: url("../img/bg-header@desktop.png");
     background-repeat: no-repeat;
+    background-size: cover;
 
     &__wrap {
       position: relative;
@@ -219,7 +242,7 @@
     &__calendar {
       top: 50px;
       width: 312px;
-      height: 322px;
+      min-height: 297px;
       right: 28px;
     }
 
@@ -229,6 +252,12 @@
       width: 462px;
       left: -158px;
       height: 153px;
+    }
+
+    &__calendar::after {
+      bottom: 0;
+      left: -245px;
+      width: 95px;
     }
 
     &__date {
